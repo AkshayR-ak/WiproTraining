@@ -1,3 +1,4 @@
+#calculation programs
 a=int(input('Enter a number'))
 b=int(input('Enter another number'))
 print('sum: ',a+b)
@@ -7,3 +8,4 @@ print('int div: ',a//b)
 print('float div: ',a/b)
 print('mod: ',a%b)
 print('pow: ',a**b)
+print('Thats it')
