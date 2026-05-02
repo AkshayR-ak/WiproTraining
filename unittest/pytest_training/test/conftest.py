@@ -5,5 +5,4 @@ import pytest
 def setup_teardown():
     print('Starting.........')
     yield#Split into setup & teardown
-    return
     print('Ending...........')
