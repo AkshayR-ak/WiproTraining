@@ -8,4 +8,3 @@ class TestExcept:
     def test_div(self):
         with pytest.raises(ZeroDivisionError):
             self.ex.div()
-
