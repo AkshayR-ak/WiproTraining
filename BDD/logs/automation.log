@@ -1,0 +1,88 @@
+2026-05-11 12:08:29,075 - INFO - ========================================
+2026-05-11 12:08:29,075 - INFO - AUTOMATION EXECUTION STARTED
+2026-05-11 12:08:29,075 - INFO - Deleting old allure-results folder
+2026-05-11 12:08:29,076 - INFO - Deleting old allure-report folder
+2026-05-11 12:08:29,076 - INFO - Starting Behave Test Execution
+2026-05-11 12:08:29,478 - INFO - ========================================
+2026-05-11 12:08:29,478 - INFO - STARTING SCENARIO : Valid Login
+2026-05-11 12:08:29,479 - INFO - Scenario Status : Status.hook_error
+2026-05-11 12:08:29,480 - INFO - SCENARIO PASSED : Valid Login
+2026-05-11 12:08:29,483 - INFO - ========================================
+2026-05-11 12:08:29,483 - INFO - STARTING SCENARIO : Invalid Login with incorrect credentials -- @1.1 
+2026-05-11 12:08:29,483 - INFO - Scenario Status : Status.hook_error
+2026-05-11 12:08:29,483 - INFO - SCENARIO PASSED : Invalid Login with incorrect credentials -- @1.1 
+2026-05-11 12:08:29,486 - INFO - ========================================
+2026-05-11 12:08:29,486 - INFO - STARTING SCENARIO : Invalid Login with incorrect credentials -- @1.2 
+2026-05-11 12:08:29,486 - INFO - Scenario Status : Status.hook_error
+2026-05-11 12:08:29,486 - INFO - SCENARIO PASSED : Invalid Login with incorrect credentials -- @1.2 
+2026-05-11 12:08:29,489 - INFO - ========================================
+2026-05-11 12:08:29,489 - INFO - STARTING SCENARIO : Invalid Login with incorrect credentials -- @1.3 
+2026-05-11 12:08:29,490 - INFO - Scenario Status : Status.hook_error
+2026-05-11 12:08:29,490 - INFO - SCENARIO PASSED : Invalid Login with incorrect credentials -- @1.3 
+2026-05-11 12:08:29,492 - INFO - ========================================
+2026-05-11 12:08:29,492 - INFO - STARTING SCENARIO : Login with empty fields -- @1.1 
+2026-05-11 12:08:29,493 - INFO - Scenario Status : Status.hook_error
+2026-05-11 12:08:29,493 - INFO - SCENARIO PASSED : Login with empty fields -- @1.1 
+2026-05-11 12:08:29,495 - INFO - ========================================
+2026-05-11 12:08:29,495 - INFO - STARTING SCENARIO : Login with empty fields -- @1.2 
+2026-05-11 12:08:29,496 - INFO - Scenario Status : Status.hook_error
+2026-05-11 12:08:29,496 - INFO - SCENARIO PASSED : Login with empty fields -- @1.2 
+2026-05-11 12:08:29,499 - INFO - ========================================
+2026-05-11 12:08:29,499 - INFO - STARTING SCENARIO : Login with empty fields -- @1.3 
+2026-05-11 12:08:29,499 - INFO - Scenario Status : Status.hook_error
+2026-05-11 12:08:29,499 - INFO - SCENARIO PASSED : Login with empty fields -- @1.3 
+2026-05-11 12:08:29,503 - INFO - ========================================
+2026-05-11 12:08:29,503 - INFO - STARTING SCENARIO : Logout functionality
+2026-05-11 12:08:29,503 - INFO - Scenario Status : Status.hook_error
+2026-05-11 12:08:29,504 - INFO - SCENARIO PASSED : Logout functionality
+2026-05-11 12:08:29,509 - INFO - ========================================
+2026-05-11 12:08:29,509 - INFO - STARTING SCENARIO : Successful Product Purchase
+2026-05-11 12:08:29,509 - INFO - Scenario Status : Status.hook_error
+2026-05-11 12:08:29,509 - INFO - SCENARIO PASSED : Successful Product Purchase
+2026-05-11 12:08:29,513 - INFO - ========================================
+2026-05-11 12:08:29,513 - INFO - STARTING SCENARIO : Add multiple products to cart -- @1.1 
+2026-05-11 12:08:29,513 - INFO - Scenario Status : Status.hook_error
+2026-05-11 12:08:29,513 - INFO - SCENARIO PASSED : Add multiple products to cart -- @1.1 
+2026-05-11 12:08:29,516 - INFO - ========================================
+2026-05-11 12:08:29,516 - INFO - STARTING SCENARIO : Add multiple products to cart -- @1.2 
+2026-05-11 12:08:29,516 - INFO - Scenario Status : Status.hook_error
+2026-05-11 12:08:29,516 - INFO - SCENARIO PASSED : Add multiple products to cart -- @1.2 
+2026-05-11 12:08:29,519 - INFO - ========================================
+2026-05-11 12:08:29,519 - INFO - STARTING SCENARIO : Add multiple products to cart -- @1.3 
+2026-05-11 12:08:29,520 - INFO - Scenario Status : Status.hook_error
+2026-05-11 12:08:29,520 - INFO - SCENARIO PASSED : Add multiple products to cart -- @1.3 
+2026-05-11 12:08:29,523 - INFO - ========================================
+2026-05-11 12:08:29,523 - INFO - STARTING SCENARIO : Attempt purchase with empty order form
+2026-05-11 12:08:29,523 - INFO - Scenario Status : Status.hook_error
+2026-05-11 12:08:29,523 - INFO - SCENARIO PASSED : Attempt purchase with empty order form
+2026-05-11 12:08:29,526 - INFO - ========================================
+2026-05-11 12:08:29,526 - INFO - STARTING SCENARIO : Remove product from cart
+2026-05-11 12:08:29,526 - INFO - Scenario Status : Status.hook_error
+2026-05-11 12:08:29,526 - INFO - SCENARIO PASSED : Remove product from cart
+2026-05-11 12:08:29,529 - INFO - ========================================
+2026-05-11 12:08:29,529 - INFO - STARTING SCENARIO : Purchase different products -- @1.1 
+2026-05-11 12:08:29,530 - INFO - Scenario Status : Status.hook_error
+2026-05-11 12:08:29,530 - INFO - SCENARIO PASSED : Purchase different products -- @1.1 
+2026-05-11 12:08:29,533 - INFO - ========================================
+2026-05-11 12:08:29,533 - INFO - STARTING SCENARIO : Purchase different products -- @1.2 
+2026-05-11 12:08:29,533 - INFO - Scenario Status : Status.hook_error
+2026-05-11 12:08:29,533 - INFO - SCENARIO PASSED : Purchase different products -- @1.2 
+2026-05-11 12:08:29,536 - INFO - ========================================
+2026-05-11 12:08:29,536 - INFO - STARTING SCENARIO : Purchase different products -- @1.3 
+2026-05-11 12:08:29,536 - INFO - Scenario Status : Status.hook_error
+2026-05-11 12:08:29,536 - INFO - SCENARIO PASSED : Purchase different products -- @1.3 
+2026-05-11 12:08:29,580 - INFO - Behave Execution Completed with status code : 1
+2026-05-11 12:08:29,580 - INFO - Generating Allure HTML Report
+2026-05-11 12:08:32,290 - INFO - Allure Report Generated with status code : 0
+2026-05-11 12:08:32,290 - INFO - AUTOMATION EXECUTION COMPLETED
+2026-05-11 12:08:32,290 - INFO - ========================================
+2026-05-11 12:12:18,487 - INFO - ========================================
+2026-05-11 12:12:18,487 - INFO - AUTOMATION EXECUTION STARTED
+2026-05-11 12:12:18,487 - INFO - Deleting old allure-results folder
+2026-05-11 12:12:18,489 - INFO - Deleting old allure-report folder
+2026-05-11 12:12:18,494 - INFO - Starting Behave Test Execution
+2026-05-11 12:12:18,511 - INFO - Behave Execution Completed with status code : 1
+2026-05-11 12:12:18,511 - INFO - Generating Allure HTML Report
+2026-05-11 12:12:20,557 - INFO - Allure Report Generated with status code : 0
+2026-05-11 12:12:20,558 - INFO - AUTOMATION EXECUTION COMPLETED
+2026-05-11 12:12:20,558 - INFO - ========================================
