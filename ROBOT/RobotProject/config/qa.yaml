@@ -12,7 +12,7 @@ timeouts:
 
 reporting:
   report_path: reports/
-  screenshot_path: screenshots/
+  screenshot_path: reports/screenshots/
 
 #execution:
 #  parallel: true

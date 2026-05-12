@@ -1,0 +1,6 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","221","Problem User Test","","2026-05-12","passed","2026-05-12","Regression Tests","Tests","",""
+"Verify total price calculation using custom Python library","429","Verify Product Prices","","2026-05-12","passed","2026-05-12","Smoke Tests","Tests","",""
+"","333","Invalid User Test","","2026-05-12","passed","2026-05-12","Regression Tests","Tests","",""
+"Verify successful login with valid credentials","454","Valid Login Test","","2026-05-12","passed","2026-05-12","Smoke Tests","Tests","",""
+"","259","Locked User Test","","2026-05-12","passed","2026-05-12","Regression Tests","Tests","",""

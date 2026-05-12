@@ -1,0 +1,429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.2 (Python 3.12.0 on win32)" generated="2026-05-12T10:06:20.211943" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="D:\Wipro\WiproTraining\Python\PythonCoding\Assignment\Day15\Robot_Project\Tests">
+<suite id="s1-s1" name="Regression Tests" source="D:\Wipro\WiproTraining\Python\PythonCoding\Assignment\Day15\Robot_Project\Tests\regression_tests.robot">
+<kw name="Open Browser To Application" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-05-12T10:06:20.462944" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-05-12T10:06:20.462944" elapsed="1.333370"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-05-12T10:06:21.796314" elapsed="0.876533"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2026-05-12T10:06:22.672847" elapsed="0.001002"/>
+</kw>
+<status status="PASS" start="2026-05-12T10:06:20.461944" elapsed="2.211905"/>
+</kw>
+<test id="s1-s1-t1" name="Invalid User Test" line="13">
+<kw name="Invalid Login Scenario" owner="login_page">
+<kw name="Login To Application" owner="login_page">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-12T10:06:22.676849" level="INFO">Typing text 'invalid_user' into text field 'id=user-name'.</msg>
+<arg>${USERNAME_FIELD}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-12T10:06:22.676849" elapsed="0.106939"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-05-12T10:06:22.783788" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2026-05-12T10:06:22.813790" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-12T10:06:22.783788" elapsed="0.092004"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-05-12T10:06:22.875792" level="INFO">Clicking button 'id=login-button'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-12T10:06:22.875792" elapsed="0.099008"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2026-05-12T10:06:22.674848" elapsed="0.299952"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2026-05-12T10:06:22.975791" level="INFO">Verifying element 'xpath=//h3[@data-test='error']' contains exact text 'Epic sadface: Username and password do not match any user in this service'.</msg>
+<arg>${ERROR_MESSAGE}</arg>
+<arg>${expected_error}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2026-05-12T10:06:22.975791" elapsed="0.026999"/>
+</kw>
+<arg>invalid_user</arg>
+<arg>secret_sauce</arg>
+<arg>Epic sadface: Username and password do not match any user in this service</arg>
+<status status="PASS" start="2026-05-12T10:06:22.674848" elapsed="0.327942"/>
+</kw>
+<kw name="Capture Failure Screenshot" owner="common" type="TEARDOWN">
+<kw name="Get Time" owner="BuiltIn">
+<msg time="2026-05-12T10:06:23.003788" level="INFO">${timestamp} = 1778560583</msg>
+<var>${timestamp}</var>
+<arg>epoch</arg>
+<doc>Returns the given time in the requested format.</doc>
+<status status="PASS" start="2026-05-12T10:06:23.003788" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If Test Failed" owner="BuiltIn">
+<arg>Capture Page Screenshot</arg>
+<arg>failure_${TEST_NAME}_${timestamp}.png</arg>
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<status status="PASS" start="2026-05-12T10:06:23.003788" elapsed="0.001000"/>
+</kw>
+<status status="PASS" start="2026-05-12T10:06:23.003788" elapsed="0.001000"/>
+</kw>
+<status status="PASS" start="2026-05-12T10:06:22.673849" elapsed="0.330939"/>
+</test>
+<test id="s1-s1-t2" name="Locked User Test" line="14">
+<kw name="Invalid Login Scenario" owner="login_page">
+<kw name="Login To Application" owner="login_page">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-12T10:06:23.006789" level="INFO">Typing text 'locked_out_user' into text field 'id=user-name'.</msg>
+<arg>${USERNAME_FIELD}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-12T10:06:23.005791" elapsed="0.098052"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-05-12T10:06:23.104810" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2026-05-12T10:06:23.140791" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-12T10:06:23.103843" elapsed="0.093949"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-05-12T10:06:23.197792" level="INFO">Clicking button 'id=login-button'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-12T10:06:23.197792" elapsed="0.062996"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2026-05-12T10:06:23.005791" elapsed="0.254997"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2026-05-12T10:06:23.260788" level="INFO">Verifying element 'xpath=//h3[@data-test='error']' contains exact text 'Epic sadface: Sorry, this user has been locked out.'.</msg>
+<arg>${ERROR_MESSAGE}</arg>
+<arg>${expected_error}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2026-05-12T10:06:23.260788" elapsed="0.018001"/>
+</kw>
+<arg>locked_out_user</arg>
+<arg>secret_sauce</arg>
+<arg>Epic sadface: Sorry, this user has been locked out.</arg>
+<status status="PASS" start="2026-05-12T10:06:23.005791" elapsed="0.272998"/>
+</kw>
+<kw name="Capture Failure Screenshot" owner="common" type="TEARDOWN">
+<kw name="Get Time" owner="BuiltIn">
+<msg time="2026-05-12T10:06:23.280790" level="INFO">${timestamp} = 1778560583</msg>
+<var>${timestamp}</var>
+<arg>epoch</arg>
+<doc>Returns the given time in the requested format.</doc>
+<status status="PASS" start="2026-05-12T10:06:23.279790" elapsed="0.001000"/>
+</kw>
+<kw name="Run Keyword If Test Failed" owner="BuiltIn">
+<arg>Capture Page Screenshot</arg>
+<arg>failure_${TEST_NAME}_${timestamp}.png</arg>
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<status status="PASS" start="2026-05-12T10:06:23.280790" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-05-12T10:06:23.279790" elapsed="0.001000"/>
+</kw>
+<status status="PASS" start="2026-05-12T10:06:23.004788" elapsed="0.276002"/>
+</test>
+<test id="s1-s1-t3" name="Problem User Test" line="15">
+<kw name="Invalid Login Scenario" owner="login_page">
+<kw name="Login To Application" owner="login_page">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-12T10:06:23.283793" level="INFO">Typing text 'problem_user' into text field 'id=user-name'.</msg>
+<arg>${USERNAME_FIELD}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-12T10:06:23.283793" elapsed="0.086000"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-05-12T10:06:23.370792" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2026-05-12T10:06:23.397788" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-12T10:06:23.370792" elapsed="0.075999"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-05-12T10:06:23.446791" level="INFO">Clicking button 'id=login-button'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-12T10:06:23.446791" elapsed="0.055000"/>
+</kw>
+<arg>${username}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2026-05-12T10:06:23.283793" elapsed="0.217998"/>
+</kw>
+<kw name="Element Text Should Be" owner="SeleniumLibrary">
+<msg time="2026-05-12T10:06:23.502790" level="INFO">Verifying element 'xpath=//h3[@data-test='error']' contains exact text 'Epic sadface: Username and password do not match any user in this service'.</msg>
+<arg>${ERROR_MESSAGE}</arg>
+<arg>${expected_error}</arg>
+<doc>Verifies that element ``locator`` contains exact the text ``expected``.</doc>
+<status status="PASS" start="2026-05-12T10:06:23.501791" elapsed="0.014540"/>
+</kw>
+<arg>problem_user</arg>
+<arg>wrong_pass</arg>
+<arg>Epic sadface: Username and password do not match any user in this service</arg>
+<status status="PASS" start="2026-05-12T10:06:23.282791" elapsed="0.233540"/>
+</kw>
+<kw name="Capture Failure Screenshot" owner="common" type="TEARDOWN">
+<kw name="Get Time" owner="BuiltIn">
+<msg time="2026-05-12T10:06:23.517331" level="INFO">${timestamp} = 1778560583</msg>
+<var>${timestamp}</var>
+<arg>epoch</arg>
+<doc>Returns the given time in the requested format.</doc>
+<status status="PASS" start="2026-05-12T10:06:23.517331" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If Test Failed" owner="BuiltIn">
+<arg>Capture Page Screenshot</arg>
+<arg>failure_${TEST_NAME}_${timestamp}.png</arg>
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<status status="PASS" start="2026-05-12T10:06:23.517331" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-05-12T10:06:23.516331" elapsed="0.001000"/>
+</kw>
+<status status="PASS" start="2026-05-12T10:06:23.281791" elapsed="0.236538"/>
+</test>
+<kw name="Close Browser Session" owner="common" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-05-12T10:06:23.519328" elapsed="2.257410"/>
+</kw>
+<status status="PASS" start="2026-05-12T10:06:23.519328" elapsed="2.257410"/>
+</kw>
+<status status="PASS" start="2026-05-12T10:06:20.243944" elapsed="5.532794"/>
+</suite>
+<suite id="s1-s2" name="Smoke Tests" source="D:\Wipro\WiproTraining\Python\PythonCoding\Assignment\Day15\Robot_Project\Tests\smoke_tests.robot">
+<kw name="Open Browser To Application" owner="common" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-05-12T10:06:25.786476" level="INFO">Opening browser 'chrome' to base url 'https://www.saucedemo.com'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-05-12T10:06:25.786476" elapsed="2.275107"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-05-12T10:06:28.062582" elapsed="0.032286"/>
+</kw>
+<kw name="Set Selenium Implicit Wait" owner="SeleniumLibrary">
+<arg>5s</arg>
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<status status="PASS" start="2026-05-12T10:06:28.095871" elapsed="0.000998"/>
+</kw>
+<status status="PASS" start="2026-05-12T10:06:25.785477" elapsed="2.311392"/>
+</kw>
+<test id="s1-s2-t1" name="Valid Login Test" line="16">
+<kw name="Set Test Documentation" owner="BuiltIn">
+<msg time="2026-05-12T10:06:28.097868" level="INFO">Set test documentation to:
+Verify successful login with valid credentials</msg>
+<arg>Verify successful login with valid credentials</arg>
+<doc>Sets documentation for the current test case.</doc>
+<status status="PASS" start="2026-05-12T10:06:28.097868" elapsed="0.000000"/>
+</kw>
+<kw name="Go To Login Page">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-05-12T10:06:28.098870" level="INFO">Opening url 'https://www.saucedemo.com'</msg>
+<arg>https://www.saucedemo.com</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-05-12T10:06:28.098870" elapsed="0.066848"/>
+</kw>
+<status status="PASS" start="2026-05-12T10:06:28.098870" elapsed="0.066848"/>
+</kw>
+<kw name="Login To Application" owner="login_page">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-12T10:06:28.166719" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<arg>${USERNAME_FIELD}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-12T10:06:28.166719" elapsed="0.146997"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-05-12T10:06:28.313716" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2026-05-12T10:06:28.355713" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-12T10:06:28.313716" elapsed="0.103000"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-05-12T10:06:28.417715" level="INFO">Clicking button 'id=login-button'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-12T10:06:28.417715" elapsed="0.137001"/>
+</kw>
+<arg>standard_user</arg>
+<arg>secret_sauce</arg>
+<status status="PASS" start="2026-05-12T10:06:28.165718" elapsed="0.389994"/>
+</kw>
+<kw name="Verify Products Page" owner="login_page">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-05-12T10:06:28.584718" level="INFO">Element 'xpath=//span[text()='Products']' is displayed.</msg>
+<arg>${PRODUCT_TITLE}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-12T10:06:28.555712" elapsed="0.029006"/>
+</kw>
+<status status="PASS" start="2026-05-12T10:06:28.555712" elapsed="0.029006"/>
+</kw>
+<kw name="Capture Failure Screenshot" owner="common" type="TEARDOWN">
+<kw name="Get Time" owner="BuiltIn">
+<msg time="2026-05-12T10:06:28.586713" level="INFO">${timestamp} = 1778560588</msg>
+<var>${timestamp}</var>
+<arg>epoch</arg>
+<doc>Returns the given time in the requested format.</doc>
+<status status="PASS" start="2026-05-12T10:06:28.585716" elapsed="0.000997"/>
+</kw>
+<kw name="Run Keyword If Test Failed" owner="BuiltIn">
+<arg>Capture Page Screenshot</arg>
+<arg>failure_${TEST_NAME}_${timestamp}.png</arg>
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<status status="PASS" start="2026-05-12T10:06:28.586713" elapsed="0.000000"/>
+</kw>
+<status status="PASS" start="2026-05-12T10:06:28.584718" elapsed="0.001995"/>
+</kw>
+<doc>Verify successful login with valid credentials</doc>
+<tag>Critical</tag>
+<tag>Regression</tag>
+<tag>Smoke</tag>
+<status status="PASS" start="2026-05-12T10:06:28.096869" elapsed="0.489844"/>
+</test>
+<test id="s1-s2-t2" name="Verify Product Prices" line="24">
+<kw name="Set Test Documentation" owner="BuiltIn">
+<msg time="2026-05-12T10:06:28.588712" level="INFO">Set test documentation to:
+Verify total price calculation using custom Python library</msg>
+<arg>Verify total price calculation using custom Python library</arg>
+<doc>Sets documentation for the current test case.</doc>
+<status status="PASS" start="2026-05-12T10:06:28.588712" elapsed="0.000000"/>
+</kw>
+<kw name="Go To Login Page">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2026-05-12T10:06:28.589711" level="INFO">Opening url 'https://www.saucedemo.com'</msg>
+<arg>https://www.saucedemo.com</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2026-05-12T10:06:28.589711" elapsed="0.052532"/>
+</kw>
+<status status="PASS" start="2026-05-12T10:06:28.589711" elapsed="0.053527"/>
+</kw>
+<kw name="Login To Application" owner="login_page">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-05-12T10:06:28.644245" level="INFO">Typing text 'standard_user' into text field 'id=user-name'.</msg>
+<arg>${USERNAME_FIELD}</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-12T10:06:28.643238" elapsed="0.096001"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2026-05-12T10:06:28.740238" level="INFO">Typing password into text field 'id=password'.</msg>
+<msg time="2026-05-12T10:06:28.766239" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-12T10:06:28.739239" elapsed="0.070998"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2026-05-12T10:06:28.811240" level="INFO">Clicking button 'id=login-button'.</msg>
+<arg>${LOGIN_BUTTON}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2026-05-12T10:06:28.811240" elapsed="0.067996"/>
+</kw>
+<arg>standard_user</arg>
+<arg>secret_sauce</arg>
+<status status="PASS" start="2026-05-12T10:06:28.643238" elapsed="0.235998"/>
+</kw>
+<kw name="Verify Products Page" owner="login_page">
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-05-12T10:06:28.901241" level="INFO">Element 'xpath=//span[text()='Products']' is displayed.</msg>
+<arg>${PRODUCT_TITLE}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-05-12T10:06:28.880238" elapsed="0.021003"/>
+</kw>
+<status status="PASS" start="2026-05-12T10:06:28.880238" elapsed="0.021003"/>
+</kw>
+<kw name="Get Product Price By Name" owner="ProductPage">
+<msg time="2026-05-12T10:06:28.965238" level="INFO">${price1} = 29.99</msg>
+<var>${price1}</var>
+<arg>Sauce Labs Backpack</arg>
+<status status="PASS" start="2026-05-12T10:06:28.901241" elapsed="0.063997"/>
+</kw>
+<kw name="Get Product Price By Name" owner="ProductPage">
+<msg time="2026-05-12T10:06:29.030244" level="INFO">${price2} = 9.99</msg>
+<var>${price2}</var>
+<arg>Sauce Labs Bike Light</arg>
+<status status="PASS" start="2026-05-12T10:06:28.965238" elapsed="0.065006"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-05-12T10:06:29.031237" level="INFO">${total} = 39.98</msg>
+<var>${total}</var>
+<arg>${price1} + ${price2}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-05-12T10:06:29.030244" elapsed="0.000993"/>
+</kw>
+<kw name="Should Be Equal As Numbers" owner="BuiltIn">
+<msg time="2026-05-12T10:06:29.032237" level="INFO">Argument types are:
+&lt;class 'float'&gt;
+&lt;class 'str'&gt;</msg>
+<arg>${total}</arg>
+<arg>39.98</arg>
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<status status="PASS" start="2026-05-12T10:06:29.031237" elapsed="0.001000"/>
+</kw>
+<kw name="Capture Failure Screenshot" owner="common" type="TEARDOWN">
+<kw name="Get Time" owner="BuiltIn">
+<msg time="2026-05-12T10:06:29.033241" level="INFO">${timestamp} = 1778560589</msg>
+<var>${timestamp}</var>
+<arg>epoch</arg>
+<doc>Returns the given time in the requested format.</doc>
+<status status="PASS" start="2026-05-12T10:06:29.033241" elapsed="0.000000"/>
+</kw>
+<kw name="Run Keyword If Test Failed" owner="BuiltIn">
+<arg>Capture Page Screenshot</arg>
+<arg>failure_${TEST_NAME}_${timestamp}.png</arg>
+<doc>Runs the given keyword with the given arguments, if the test failed.</doc>
+<status status="PASS" start="2026-05-12T10:06:29.034240" elapsed="0.000155"/>
+</kw>
+<status status="PASS" start="2026-05-12T10:06:29.033241" elapsed="0.001154"/>
+</kw>
+<doc>Verify total price calculation using custom Python library</doc>
+<tag>Regression</tag>
+<status status="PASS" start="2026-05-12T10:06:28.587716" elapsed="0.446679"/>
+</test>
+<kw name="Close Browser Session" owner="common" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-05-12T10:06:29.035239" elapsed="2.221433"/>
+</kw>
+<status status="PASS" start="2026-05-12T10:06:29.035239" elapsed="2.221433"/>
+</kw>
+<status status="PASS" start="2026-05-12T10:06:25.778585" elapsed="5.478087"/>
+</suite>
+<status status="PASS" start="2026-05-12T10:06:20.212944" elapsed="11.044720"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Critical</stat>
+<stat pass="2" fail="0" skip="0">Regression</stat>
+<stat pass="1" fail="0" skip="0">Smoke</stat>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="5" fail="0" skip="0">Tests</stat>
+<stat name="Regression Tests" id="s1-s1" pass="3" fail="0" skip="0">Tests.Regression Tests</stat>
+<stat name="Smoke Tests" id="s1-s2" pass="2" fail="0" skip="0">Tests.Smoke Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
